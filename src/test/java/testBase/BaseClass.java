@@ -26,7 +26,7 @@ import com.beust.jcommander.Parameter;
 
 public class BaseClass {
 	
-   public WebDriver driver;
+   public static WebDriver driver;
    public Logger logger; //Log4j
    public Properties p;
 	
@@ -88,7 +88,7 @@ public class BaseClass {
 				
 	}
 	
-	public String captureScreen(String tname) throws IOException
+	public static String captureScreen(String tname) throws IOException
 	{
 		String timeStamp=new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		
